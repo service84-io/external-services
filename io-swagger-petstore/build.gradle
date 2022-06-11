@@ -60,6 +60,11 @@ jar {
   archiveBaseName = s84JarName
   archiveVersion = s84Version
   enabled = true
+
+  from('.') {
+    include  'LICENSE'
+    include  'NOTICE'
+  }
 }
 
 // ossrh requries signing https://central.sonatype.org/pages/requirements.html
